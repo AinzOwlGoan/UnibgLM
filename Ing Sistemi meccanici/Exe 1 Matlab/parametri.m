@@ -1,0 +1,16 @@
+function dati=parametri()
+dati.m = 8000; % massa totale in [kg]
+dati.S = 7.5; % [m^2] area sezione frontale
+dati.Cr = 0.7; % coefficiente resistenza aerodinamica
+dati.D = 600e-3; % [m] diametro delle ruote
+dati.Jm = 0.1; % [kg m^2] momento inerzia motore
+dati.tau = 5/24; % rapporto di trasmissione
+dati.eta = 0.97; % rendimento della trasmissione
+dati.p = 30/1000; % pendenza 3 per mille
+dati.rho = 1.25; % [kg/m^3] resistenza dell'aria 
+dati.r = dati.D/2; % raggio [m]
+dati.Cs = 900; % [Nm]
+dati.n0 = 1000; % RPM
+dati.g = 9.81; 
+dati.alpha = atan(dati.p);
+dati.k = -dati.Cs/dati.n0;
